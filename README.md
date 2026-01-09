@@ -1,2 +1,6 @@
 # stats201-project-zzz
-Team members: Hanyang Zhou, Raodan Zhang, Lexi Zhou
+This repository is the final project for STATS 201.
+
+## Project information
+- Team members: Hanyang Zhou, Raodan Zhang, Lexi Zhou
+- Instructor: Markus Neumann
