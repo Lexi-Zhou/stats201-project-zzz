@@ -6,3 +6,4 @@ This repository is the final project for STATS 201.
 - Instructor: Markus Neumann
 
 print("good luck!")
+=> good luck!
