@@ -5,6 +5,25 @@ This repository is the final project for STATS 201.
 - Team members: Hanyang Zhou, Raodan Zhang, Lexi Zhou
 - Instructor: Markus Neumann
 
+## Acknowledgement
+### Division of Responsibilities
+For this project stage, each group member was responsible for the following components:
+- Raodan Zhang:
+  - Primary responsibility:
+  - Specific tasks completed in week 2:
+- Hanyang Zhou:
+  - Primary responsibility:
+    - Prepare and process datasets. 
+  - Specific tasks completed in week 2:
+    - Data cleaning and labeling by gender inferred from text.
+    - Manual review for conflict cases.
+    - Record data prepration memos.
+
+- Lexi Zhou:
+  - Primary responsibility:
+  - Specific tasks completed in week 2:
+
+
 ## Navigation Instructions
 This repository is structured into several directiories to support running the code, accessing datasets, and reviewing documentation. The following section explains how to navigate the repository.
 ### 1. Code for ML Tasks
