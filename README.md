@@ -30,7 +30,10 @@ This repository is structured into several directiories to support running the c
 For this project stage, each group member was responsible for the following components:
 - Raodan Zhang:
   - Primary responsibility:
+    - Background Research
   - Specific tasks completed in week 2:
+    - Clarified the scope and background of the research question
+    - Envision future data analysis approaches
 - Hanyang Zhou:
   - Primary responsibility:
     - Prepare and process datasets. 
