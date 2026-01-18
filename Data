@@ -1,0 +1,4 @@
+# Data Folder
+This folder contains the datasets applied in this research. Key datasets include:
+- RMP_merged.csv - The raw dataset of all RateMyProfessor entries
+- 09_RMP_prof_gender_manual_updated.csv - The prepared dataset with professor-level labeled entries after manual checking.
