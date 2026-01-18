@@ -23,6 +23,9 @@ This repository is structured into several directiories to support running the c
 - Location: /Visualization
 - This folder contains figures generated in this research.
 
+### 4. Research Plan
+- Research Question: How does gender influence students’ comment on college professors of similar teaching level in the same discipline?
+
 
 
 ## Acknowledgement
