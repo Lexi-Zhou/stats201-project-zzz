@@ -19,6 +19,7 @@ This repository is structured into several directiories to support running the c
   - W2_2. Gender label.ipynb - Label gender of professors based on student comments.
   - W3_1. Revise rating groups - Revise rating scales to the official RMP scales (Good: 3.5-5, Average: 2.5-3.4, Poor: 1-2.4).
   - W3_3. Gender_Check_Finalized - Assign all comments with a concrete gender.
+  - W3_4. Baseline.ipynb - Train/test split and baseline models with justification.
  
 ### 2. Datasets
 - Location: /Data
@@ -41,6 +42,8 @@ This repository is structured into several directiories to support running the c
     
 ## 📦 Baseline Modeling
 - 1. Train/test split: Split the dataset into training and test sets using an 80/20 random split with a fixed random state to ensure reproducibility.
+- 2. Gender-agnostic baseline: Overall high-frequency word stability (train/test Jaccard analysis).
+- 3. Gender-aware baseline: Gender-differentiated word usage (Difference-of-Proportions & DAR).
 
 ## 🖊️ Acknowledgement
 ### Division of Responsibilities
