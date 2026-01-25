@@ -27,6 +27,7 @@ This repository is structured into several directiories to support running the c
   - RMP_merged.csv - The raw dataset of all RateMyProfessor entries
   - 09_RMP_prof_gender_manual_updated.csv - The prepared dataset with professor-level labeled entries after manual checking.
   - 11_RMP_prof_gender_preprocessed.csv - Comment columns with text preprocessed.
+  - 16_RMP_gender_finalized.csv - With concrete gender for every comment text.
 
 ### 3. Visualizatuion
 - Location: /Visualization
@@ -49,8 +50,8 @@ This repository is structured into several directiories to support running the c
 ### Division of Responsibilities
 For this project stage, each group member was responsible for the following components:
 - Raodan Zhang:
-    - Background Research
-    - Dataset External Gender Validate
+    - Background research
+    - Dataset external gender validate
 - Hanyang Zhou:
     - Data cleaning and labeling by gender inferred from text。
     - Revise rating scale and conduct text preprocessing; Split train/test dataset;
