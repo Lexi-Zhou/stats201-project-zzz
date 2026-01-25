@@ -63,9 +63,7 @@ For this project stage, each group member was responsible for the following comp
     - Record data prepration memos.
 
 - Lexi Zhou:
-  - Primary responsibility: descriptive dataset analysis
-  - Specific tasks completed in week 2:
-    - Defined dataset variables and their meanings.
-    - Performed descriptive analysis of student rating groups.
-    - Summarized professor gender distribution based on existing labels.
+  - Descriptive dataset analysis.
+  - Develop baseline models to assess word frequency patterns and preliminary gender differences in student comments.
 
+ 
