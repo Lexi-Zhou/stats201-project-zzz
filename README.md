@@ -52,12 +52,8 @@ For this project stage, each group member was responsible for the following comp
     - Background Research
     - Dataset External Gender Validate
 - Hanyang Zhou:
-  - Primary responsibility:
-    - Prepare and process datasets. 
-  - Specific tasks completed in week 2:
-    - Data cleaning and labeling by gender inferred from text.
-    - Manual review for conflict cases.
-    - Record data prepration memos.
+    - Data cleaning and labeling by gender inferred from text。
+    - Revise rating scale and conduct text preprocessing; Split train/test dataset;
 
 - Lexi Zhou:
   - Descriptive dataset analysis.
