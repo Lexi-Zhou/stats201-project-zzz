@@ -1,9 +1,12 @@
-# Stats201 Final Project - zzz
+# RateMyProfessor - Word Gender in Comment
 This repository is the final project for STATS 201.
 
 ## Project information
 - Team members: Hanyang Zhou, Raodan Zhang, Lexi Zhou
 - Instructor: Markus Neumann
+
+## Research question
+How does gender influence students’ comment on college professors of similar teaching level in the same discipline?
 
 ## Navigation Instructions
 This repository is structured into several directiories to support running the code, accessing datasets, and reviewing documentation. The following section explains how to navigate the repository.
@@ -22,10 +25,6 @@ This repository is structured into several directiories to support running the c
 ### 3. Visualizatuion
 - Location: /Visualization
 - This folder contains figures generated in this research.
-
-### 4. Research Plan
-- Research Question: How does gender influence students’ comment on college professors of similar teaching level in the same discipline?
-
 
 
 ## Acknowledgement
