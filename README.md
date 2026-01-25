@@ -18,6 +18,7 @@ This repository is structured into several directiories to support running the c
   - W2_1. Data Preparation.ipynb - Merge datasets and cleans the dataset.
   - W2_2. Gender label.ipynb - Label gender of professors based on student comments.
   - W3_1. Revise rating groups - Revise rating scales to the official RMP scales (Good: 3.5-5, Average: 2.5-3.4, Poor: 1-2.4).
+  - W3_3. Gender_Check_Finalized - Assign all comments with a concrete gender.
  
 ### 2. Datasets
 - Location: /Data
