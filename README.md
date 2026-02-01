@@ -20,6 +20,7 @@ This repository is structured into several directiories to support running the c
   - W3_1. Revise rating groups - Revise rating scales to the official RMP scales (Good: 3.5-5, Average: 2.5-3.4, Poor: 1-2.4).
   - W3_3. Gender_Check_Finalized - Assign all comments with a concrete gender.
   - W3_4. Baseline.ipynb - Train/test split and baseline models with justification.
+  - W4_1. Feature Engineering - Extended data preprocessing and experimental grouping structure split.
  
 ### 2. Datasets
 - Location: /Data
@@ -28,6 +29,8 @@ This repository is structured into several directiories to support running the c
   - 09_RMP_prof_gender_manual_updated.csv - The prepared dataset with professor-level labeled entries after manual checking.
   - 11_RMP_prof_gender_preprocessed.csv - Comment columns with text preprocessed.
   - 16_RMP_gender_finalized.csv - With concrete gender for every comment text.
+  - 17_RMP_comment_department.csv - Comments with further preprocessed text, departments classified.
+  - 18_RMP_humanities/stem_poor/average/good.csv - 6 subgroups for modeling.
 
 ### 3. Visualizatuion
 - Location: /Visualization
@@ -59,5 +62,6 @@ For this project stage, each group member was responsible for the following comp
 - Lexi Zhou:
   - Descriptive dataset analysis.
   - Develop baseline models to assess word frequency patterns and preliminary gender differences in student comments.
+  - Designed text features and representations, and set up the controlled experimental structure for later model and lexical comparisons.
 
  
