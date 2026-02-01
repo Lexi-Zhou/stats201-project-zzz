@@ -21,6 +21,7 @@ This repository is structured into several directiories to support running the c
   - W3_3. Gender_Check_Finalized - Assign all comments with a concrete gender.
   - W3_4. Baseline.ipynb - Train/test split and baseline models with justification.
   - W4_1. Feature Engineering - Extended data preprocessing and experimental grouping structure split.
+  - W4_3. Model2: LOR - Log-Odds Ratio with a Dirichlet Prior
  
 ### 2. Datasets
 - Location: /Data
@@ -31,10 +32,12 @@ This repository is structured into several directiories to support running the c
   - 16_RMP_gender_finalized.csv - With concrete gender for every comment text.
   - 17_RMP_comment_department.csv - Comments with further preprocessed text, departments classified.
   - 18_RMP_humanities/stem_poor/average/good.csv - 6 subgroups for modeling.
+  - 20_LOR_combined_top_20_words_analysis.txt - Results of Log-odds ratio
 
 ### 3. Visualizatuion
 - Location: /Visualization
 - This folder contains figures generated in this research.
+  - W4_Z-scores_comparison_scrubbed.png - Heatmap of z-scores comparison 
 
 ## 📊 Data Preprocessing
 - 1. Gender classification:
@@ -48,6 +51,29 @@ This repository is structured into several directiories to support running the c
 - 1. Train/test split: Split the dataset into training and test sets using an 80/20 random split with a fixed random state to ensure reproducibility.
 - 2. Gender-agnostic baseline: Overall high-frequency word stability (train/test Jaccard analysis).
 - 3. Gender-aware baseline: Gender-differentiated word usage (Difference-of-Proportions & DAR).
+ 
+
+## 🔧 Modeling
+### Model 1:
+
+### Model 2: Log-Odds Ratio with a Dirichlet Prior
+We use the Log-Odds Ratio with a Dirichlet Prior (Monroe et al., 2008) to analyze gendered language in student comments. LOR focuses on interpreting bias with statistical confidence.
+
+#### Why use LOR?
+- It prevents high-frequency stop words (like the, and) from dominating the results。
+- It  uses Bayesian Shrinkage to stop rare words (appearing only 1-2 times) from creating false extreme results.
+- It allows us to compare how the same word behaves differently in STEM versus Humanities.
+
+#### How the Model Works？
+- 1. Word Counting: We count word frequencies for female and male professor comments across 6 subsets (STEM/Humanities x Poor/Avg/Good).
+- 2. Dirichlet Prior: We incorporate a Background Corpus as a prior. This smooths the data and handling cases where a word count is zero.
+- 3. Log-Odds Calculation: We calculate the ratio of a word's usage between groups on a symmetric logarithmic scale.
+- 4. Variance Estimation: We calculate the Uncertainty for each word. Rare words receive a variance penalty, meaning the model trusts them less.
+- 5. Z-score Normalization: The final score represents the Confidence of the bias.
+  - Positive Z-score: Male-leaning (Red in our heatmaps).
+  - Negative Z-score: Female-leaning (Blue in our heatmaps).
+#### Key Findings
+Our model reveals that students often focus on a female professor's personality (e.g., sweet, nice) while emphasizing a male professor's professional status (e.g., professor).
 
 ## 🖊️ Acknowledgement
 ### Division of Responsibilities
@@ -55,9 +81,11 @@ For this project stage, each group member was responsible for the following comp
 - Raodan Zhang:
     - Background research
     - Dataset external gender validate
+      
 - Hanyang Zhou:
     - Data cleaning and labeling by gender inferred from text。
     - Revise rating scale and conduct text preprocessing; Split train/test dataset;
+    - Conducted the Log-Odds Ratio with a Dirichlet Prior to analyze student comments.
 
 - Lexi Zhou:
   - Descriptive dataset analysis.
