@@ -54,7 +54,21 @@ This repository is structured into several directiories to support running the c
  
 
 ## 🔧 Modeling
-### Model 1:
+### Model 1: Random Forest with Logistic Regressiosn
+We use Random Forest to indicate the feature importance of words in comments and combine with Logistic Regression to predict its gender predictation direction.
+
+#### Why use Random Forest and Logistic Regression?
+- It's a typical approach to deal with complex, non-linear data and extract importance words in texts for prediction.
+- It shows direct metrics, coefficient and feature importance to quantify model performances.
+
+#### How the Model Works？
+- 1. Word Vectorization
+  2. Model Training: We train the Random Forest & Logistic Regression with train/test split and evaluate their comparability and performance with metrics (e.g., oob score, accuracy).
+  3.  Combine LR and RF
+ 
+#### Key Findings
+Although lots of words are not consistently important across subsets in top30 important results, it turned out that the word "professor" is most predictable of male professors, while nice is most predicatble of female professors.
+
 
 ### Model 2: Log-Odds Ratio with a Dirichlet Prior
 We use the Log-Odds Ratio with a Dirichlet Prior (Monroe et al., 2008) to analyze gendered language in student comments. LOR focuses on interpreting bias with statistical confidence.
