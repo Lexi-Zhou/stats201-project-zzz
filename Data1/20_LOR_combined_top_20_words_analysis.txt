@@ -1,0 +1,312 @@
+
+==============================
+SUBSET: STEM_Poor
+COLUMN: comments_original
+==============================
+      Word    Z_Score Direction
+       she -18.786740    Female
+        he  15.613160      Male
+       her -13.510725    Female
+       his   9.148334      Male
+       him   6.744626      Male
+       guy   4.609687      Male
+       man   2.503701      Male
+      shes  -2.377591    Female
+      lady  -2.377591    Female
+  clinical  -2.186832    Female
+    carson  -2.186832    Female
+       lab   2.173313      Male
+ chemistry   1.981371      Male
+recitation  -1.973989    Female
+   narcisa  -1.864587    Female
+        su   1.769136      Male
+       not  -1.748310    Female
+    claire  -1.744029    Female
+       way  -1.728802    Female
+      time  -1.666304    Female
+
+==============================
+SUBSET: STEM_Poor
+COLUMN: comments_scrubbed
+==============================
+       Word   Z_Score Direction
+   clinical -2.187723    Female
+     carson -2.187723    Female
+        lab  2.172084      Male
+  chemistry  1.980510      Male
+ recitation -1.974929    Female
+    narcisa -1.865317    Female
+         su  1.768405      Male
+        not -1.768119    Female
+     claire -1.744703    Female
+        way -1.731438    Female
+       time -1.671152    Female
+unorganized -1.657071    Female
+   computer  1.636993      Male
+      early -1.615131    Female
+      smart  1.598728      Male
+  professor  1.593325      Male
+       have -1.591786    Female
+     review -1.578803    Female
+      funny  1.546962      Male
+       idea  1.542612      Male
+
+==============================
+SUBSET: STEM_Avg
+COLUMN: comments_original
+==============================
+      Word    Z_Score Direction
+       she -21.961625    Female
+        he  19.425528      Male
+       her -16.679331    Female
+       his  13.000334      Male
+       him   8.735175      Male
+       guy   5.374821      Male
+         m  -2.665954    Female
+      shes  -2.457638    Female
+  clinical  -2.423529    Female
+     nurse  -2.401837    Female
+       man   2.281104      Male
+     funny   2.110190      Male
+      lady  -2.064425    Female
+  homework   2.053288      Male
+instructor  -1.922228    Female
+  calculus   1.903866      Male
+    weston  -1.884371    Female
+     laugh   1.856833      Male
+   chaplin  -1.787572    Female
+       fun   1.715134      Male
+
+==============================
+SUBSET: STEM_Avg
+COLUMN: comments_scrubbed
+==============================
+       Word   Z_Score Direction
+   clinical -2.433345    Female
+      nurse -2.414563    Female
+      funny  2.094689      Male
+   homework  2.023190      Male
+ instructor -1.940496    Female
+   calculus  1.894246      Male
+     weston -1.891179    Female
+      laugh  1.849521      Male
+    chaplin -1.794025    Female
+        fun  1.703170      Male
+ chatterjee -1.691310    Female
+unorganized -1.688494    Female
+       math  1.657389      Male
+     person -1.615397    Female
+       jeff  1.601437      Male
+        mad -1.581954    Female
+      forth -1.581954    Female
+      horse -1.581954    Female
+        one -1.581954    Female
+     attend  1.576564      Male
+
+==============================
+SUBSET: STEM_Good
+COLUMN: comments_original
+==============================
+     Word    Z_Score Direction
+      she -34.120735    Female
+       he  29.662693      Male
+      her -26.425653    Female
+      his  18.357823      Male
+      him  13.300865      Male
+      guy   7.917073      Male
+     shes  -5.012669    Female
+     lady  -4.091088    Female
+        m  -4.057625    Female
+      man   3.845644      Male
+    sweet  -3.783230    Female
+professor   3.615547      Male
+    nurse  -3.281939    Female
+   physic   3.222289      Male
+    woman  -2.957689    Female
+     math  -2.822002    Female
+   online  -2.565639    Female
+    linda  -2.485334    Female
+nutrition  -2.461114    Female
+    offer  -2.395766    Female
+
+==============================
+SUBSET: STEM_Good
+COLUMN: comments_scrubbed
+==============================
+     Word   Z_Score Direction
+    sweet -3.805792    Female
+professor  3.516598      Male
+    nurse -3.303833    Female
+   physic  3.203695      Male
+     math -2.896101    Female
+   online -2.607814    Female
+    linda -2.496669    Female
+nutrition -2.473625    Female
+     help -2.455684    Female
+    offer -2.421204    Female
+     easy -2.419635    Female
+  respond -2.394062    Female
+    email -2.362932    Female
+ clinical -2.278077    Female
+     knox  2.270957      Male
+   person -2.222218    Female
+        j  2.213404      Male
+      joe  2.213404      Male
+    leave  2.190419      Male
+  lecture  2.155468      Male
+
+==============================
+SUBSET: Human_Poor
+COLUMN: comments_original
+==============================
+   Word    Z_Score Direction
+     he  18.701773      Male
+    she -15.970586    Female
+    her -11.791942    Female
+    his  11.757252      Male
+    him   7.037637      Male
+    guy   3.919383      Male
+   draw   3.491727      Male
+   nice  -2.403003    Female
+   exam   2.230085      Male
+   lady  -2.210142    Female
+  group  -2.161462    Female
+chapter   2.105787      Male
+    man   2.016906      Male
+  funny   2.013511      Male
+   test   2.001450      Male
+   lazy   1.903641      Male
+account   1.903641      Male
+english  -1.828024    Female
+   work  -1.772757    Female
+   bore   1.708435      Male
+
+==============================
+SUBSET: Human_Poor
+COLUMN: comments_scrubbed
+==============================
+      Word   Z_Score Direction
+      draw  3.487518      Male
+      nice -2.412834    Female
+      exam  2.222513      Male
+     group -2.165913    Female
+   chapter  2.101107      Male
+     funny  2.008892      Male
+      test  1.990288      Male
+      lazy  1.900702      Male
+   account  1.900702      Male
+   english -1.833911    Female
+      work -1.783765    Female
+      bore  1.700727      Male
+  question  1.644143      Male
+complicate  1.642164      Male
+     peter  1.642164      Male
+ entertain  1.642164      Male
+      blah  1.642164      Male
+     trust  1.642164      Male
+ obviously  1.642164      Male
+   project -1.592814    Female
+
+==============================
+SUBSET: Human_Avg
+COLUMN: comments_original
+==============================
+    Word    Z_Score Direction
+      he  25.634224      Male
+     she -24.517896    Female
+     her -18.779218    Female
+     his  16.091843      Male
+     him  10.451548      Male
+     guy   7.553314      Male
+     man   3.403886      Male
+   essay  -3.193011    Female
+    lady  -3.165308    Female
+  speech  -3.126505    Female
+   slide   2.749483      Male
+    shes  -2.498340    Female
+   woman  -2.495410    Female
+   lidio   2.366924      Male
+    bore   2.343244      Male
+     asl  -2.329540    Female
+    very  -2.314564    Female
+business   2.314144      Male
+  public  -2.268785    Female
+   humor   2.179535      Male
+
+==============================
+SUBSET: Human_Avg
+COLUMN: comments_scrubbed
+==============================
+     Word   Z_Score Direction
+    essay -3.201059    Female
+   speech -3.130459    Female
+    slide  2.743994      Male
+    lidio  2.364600      Male
+     very -2.340925    Female
+     bore  2.334200      Male
+      asl -2.332408    Female
+ business  2.310511      Male
+   public -2.271897    Female
+    humor  2.176454      Male
+  account  2.159844      Male
+   wilson  2.114753      Male
+economics  2.084968      Male
+   strict -2.006479    Female
+     note  2.004224      Male
+     joke  1.996324      Male
+     acct  1.988509      Male
+    curve  1.968352      Male
+    study  1.929633      Male
+    sense  1.917606      Male
+
+==============================
+SUBSET: Human_Good
+COLUMN: comments_original
+==============================
+      Word    Z_Score Direction
+       she -48.978051    Female
+        he  45.314639      Male
+       her -37.769495    Female
+       his  28.684750      Male
+       him  21.024616      Male
+       guy  12.568988      Male
+       man   6.681590      Male
+      shes  -6.482527    Female
+      lady  -6.257140    Female
+     sweet  -5.160768    Female
+         m  -4.825153    Female
+     woman  -4.692109    Female
+      nice  -3.197322    Female
+   helpful  -3.124295    Female
+    french  -3.039892    Female
+philosophy   2.924345      Male
+   lecture   2.917230      Male
+    person  -2.854265    Female
+      love  -2.823194    Female
+       lay   2.811421      Male
+
+==============================
+SUBSET: Human_Good
+COLUMN: comments_scrubbed
+==============================
+       Word   Z_Score Direction
+      sweet -5.184790    Female
+       nice -3.256020    Female
+    helpful -3.191130    Female
+     french -3.054430    Female
+ philosophy  2.910077      Male
+     person -2.887774    Female
+       love -2.880717    Female
+    lecture  2.857317      Male
+        lay  2.791012      Male
+       dude  2.741636      Male
+    finance  2.659051      Male
+      music  2.648058      Male
+photography  2.581525      Male
+   sweetest -2.525946    Female
+       hike  2.512634      Male
+  wonderful -2.507301    Female
+        asl -2.467478    Female
+       matt  2.462934      Male
+     credit -2.459075    Female
+       jazz  2.401492      Male
