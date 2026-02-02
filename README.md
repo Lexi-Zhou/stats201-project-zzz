@@ -64,8 +64,7 @@ We use the feature importance of Random Forest and assign corresponding gender p
 #### How the Model Works？
 - 1. TfidVectorization：We turn the comments into TF-IDF vectors for later analysis.
   2. Model Training: We train the Random Forest & Logistic Regression with train/test split and evaluate their comparability and performance with metrics (e.g., oob score, accuracy).
-  3. Coefficient Extraction: Since RF model
-  4. Gender Assign:
+  3. Model Combination: Since feature importance in RF model doesn't have gender prediction directions, we introduce LR, extract its coefficient. Based on the coefficient's sign, we can assign the gender direction to feature importance (given the LR & RF also showed similiar metrics in prediction) and output a table with top 30 words, corresponding feature importance (RF), coefficient (LR), and predicted gender.
  
 #### Key Findings
 Although lots of words are not consistently important across subsets in top30 important results, it turned out that the word "professor" is most predictable of male professors, while nice is most predicatble of female professors.
