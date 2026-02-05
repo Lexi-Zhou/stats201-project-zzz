@@ -1,0 +1,636 @@
+========================================================
+--- Analysis for df1_stem_poor ---
+========================================================
+
+--------------------------------------
+--- Original Comments ---
+--------------------------------------
+Random Forest Accuracy: 91.71%
+Random Forest OOB Score: 0.93
+Logistic Regression Accuracy: 90.73%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.99      0.83      0.90        92
+        male       0.88      0.99      0.93       113
+
+    accuracy                           0.92       205
+   macro avg       0.93      0.91      0.91       205
+weighted avg       0.93      0.92      0.92       205
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       1.00      0.79      0.88        92
+        male       0.86      1.00      0.92       113
+
+    accuracy                           0.91       205
+   macro avg       0.93      0.90      0.90       205
+weighted avg       0.92      0.91      0.91       205
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+she                  0.187623             -6.966704       Female    
+he                   0.133646             6.079190        Male      
+her                  0.099301             -4.703719       Female    
+his                  0.057806             3.363007        Male      
+him                  0.029402             2.438412        Male      
+guy                  0.010182             1.433111        Male      
+not                  0.009545             -0.312672       Female    
+class                0.008493             -0.016656       Female    
+worst                0.006654             -0.683831       Female    
+teacher              0.006101             0.249529        Male      
+professor            0.005465             0.832370        Male      
+test                 0.005405             -0.728506       Female    
+easy                 0.005336             -0.072951       Female    
+teach                0.005204             -0.041803       Female    
+do                   0.005199             -0.194686       Female    
+very                 0.005081             -0.698164       Female    
+terrible             0.004890             -0.593913       Female    
+hard                 0.004407             0.289728        Male      
+student              0.004212             -0.208181       Female    
+nice                 0.004126             -0.394180       Female    
+
+--------------------------------------
+--- Scrubbed Comments ---
+--------------------------------------
+Random Forest Accuracy: 58.05%
+Random Forest OOB Score: 0.63
+Logistic Regression Accuracy: 62.44%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.57      0.25      0.35        92
+        male       0.58      0.85      0.69       113
+
+    accuracy                           0.58       205
+   macro avg       0.58      0.55      0.52       205
+weighted avg       0.58      0.58      0.54       205
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.68      0.30      0.42        92
+        male       0.61      0.88      0.72       113
+
+    accuracy                           0.62       205
+   macro avg       0.65      0.59      0.57       205
+weighted avg       0.64      0.62      0.59       205
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+not                  0.019870             -1.013402       Female    
+class                0.013926             0.302380        Male      
+test                 0.011276             -0.956766       Female    
+worst                0.011043             -1.035250       Female    
+teach                0.010971             0.725919        Male      
+do                   0.010779             -0.550581       Female    
+very                 0.010292             -0.914078       Female    
+like                 0.009929             -1.110122       Female    
+terrible             0.009430             -0.837678       Female    
+professor            0.009330             1.040559        Male      
+math                 0.009253             -0.973581       Female    
+teacher              0.008609             -0.098548       Female    
+easy                 0.008516             0.077289        Male      
+need                 0.007683             -0.779691       Female    
+just                 0.006940             -0.184526       Female    
+help                 0.006625             -0.492741       Female    
+make                 0.006543             -0.420645       Female    
+student              0.006348             -0.607278       Female    
+recommend            0.006274             -0.925852       Female    
+understand           0.006235             0.276106        Male      
+
+========================================================
+--- Analysis for df2_stem_average ---
+========================================================
+
+--------------------------------------
+--- Original Comments ---
+--------------------------------------
+Random Forest Accuracy: 95.27%
+Random Forest OOB Score: 0.91
+Logistic Regression Accuracy: 94.95%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.99      0.91      0.95       147
+        male       0.93      0.99      0.96       170
+
+    accuracy                           0.95       317
+   macro avg       0.96      0.95      0.95       317
+weighted avg       0.95      0.95      0.95       317
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.99      0.90      0.94       147
+        male       0.92      0.99      0.95       170
+
+    accuracy                           0.95       317
+   macro avg       0.95      0.95      0.95       317
+weighted avg       0.95      0.95      0.95       317
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+she                  0.239240             -8.340183       Female    
+he                   0.121552             7.300430        Male      
+her                  0.116386             -5.731364       Female    
+his                  0.044212             4.440056        Male      
+him                  0.031606             3.040927        Male      
+guy                  0.013736             2.090405        Male      
+class                0.006921             0.071100        Male      
+very                 0.006436             -0.420248       Female    
+not                  0.006304             -0.263716       Female    
+professor            0.005447             0.681622        Male      
+good                 0.004681             0.430793        Male      
+teach                0.004319             0.170542        Male      
+teacher              0.004154             -0.357080       Female    
+difficult            0.004080             -0.524892       Female    
+grade                0.003717             0.901243        Male      
+no                   0.003571             -0.683597       Female    
+learn                0.003557             0.203982        Male      
+helpful              0.003404             -0.151315       Female    
+homework             0.003385             1.262161        Male      
+test                 0.003305             -0.202112       Female    
+
+--------------------------------------
+--- Scrubbed Comments ---
+--------------------------------------
+Random Forest Accuracy: 56.47%
+Random Forest OOB Score: 0.57
+Logistic Regression Accuracy: 64.67%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.54      0.39      0.45       147
+        male       0.58      0.72      0.64       170
+
+    accuracy                           0.56       317
+   macro avg       0.56      0.55      0.55       317
+weighted avg       0.56      0.56      0.55       317
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.66      0.49      0.56       147
+        male       0.64      0.78      0.70       170
+
+    accuracy                           0.65       317
+   macro avg       0.65      0.64      0.63       317
+weighted avg       0.65      0.65      0.64       317
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+not                  0.016144             -0.146218       Female    
+class                0.013430             0.186456        Male      
+very                 0.012561             -0.484649       Female    
+professor            0.010093             1.112365        Male      
+teacher              0.009356             -0.597124       Female    
+teach                0.008942             0.260593        Male      
+do                   0.008790             -0.421955       Female    
+test                 0.008691             -0.126767       Female    
+hard                 0.008432             -0.054053       Female    
+easy                 0.007879             -0.966621       Female    
+good                 0.007855             1.161932        Male      
+lecture              0.007770             -0.043987       Female    
+want                 0.007724             -1.102610       Female    
+learn                0.007643             0.806417        Male      
+grade                0.007533             0.960223        Male      
+nice                 0.007471             -0.364869       Female    
+homework             0.007384             1.471148        Male      
+material             0.007308             1.103212        Male      
+helpful              0.007286             -0.727818       Female    
+question             0.007086             -0.602393       Female    
+
+========================================================
+--- Analysis for df3_stem_good ---
+========================================================
+
+--------------------------------------
+--- Original Comments ---
+--------------------------------------
+Random Forest Accuracy: 91.24%
+Random Forest OOB Score: 0.91
+Logistic Regression Accuracy: 90.64%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.98      0.83      0.90       392
+        male       0.87      0.98      0.92       441
+
+    accuracy                           0.91       833
+   macro avg       0.92      0.91      0.91       833
+weighted avg       0.92      0.91      0.91       833
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.98      0.82      0.89       392
+        male       0.86      0.98      0.92       441
+
+    accuracy                           0.91       833
+   macro avg       0.92      0.90      0.90       833
+weighted avg       0.91      0.91      0.91       833
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+she                  0.203299             -11.492346      Female    
+he                   0.149115             9.784257        Male      
+her                  0.110102             -8.701216       Female    
+his                  0.063443             6.022210        Male      
+him                  0.030938             4.273725        Male      
+guy                  0.011454             2.911783        Male      
+teacher              0.008492             -0.176388       Female    
+very                 0.008125             -0.604315       Female    
+professor            0.008027             1.419990        Male      
+class                0.007176             -0.106167       Female    
+great                0.006337             -0.005607       Female    
+not                  0.005790             0.176092        Male      
+helpful              0.005616             -0.828568       Female    
+best                 0.005322             0.448185        Male      
+easy                 0.004671             -0.879773       Female    
+good                 0.004496             0.506945        Male      
+nice                 0.004449             -1.328740       Female    
+shes                 0.004061             -1.739529       Female    
+help                 0.003920             -0.305529       Female    
+math                 0.003786             -0.594481       Female    
+
+--------------------------------------
+--- Scrubbed Comments ---
+--------------------------------------
+Random Forest Accuracy: 62.42%
+Random Forest OOB Score: 0.61
+Logistic Regression Accuracy: 65.67%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.65      0.43      0.52       392
+        male       0.61      0.79      0.69       441
+
+    accuracy                           0.62       833
+   macro avg       0.63      0.61      0.61       833
+weighted avg       0.63      0.62      0.61       833
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.68      0.51      0.58       392
+        male       0.64      0.79      0.71       441
+
+    accuracy                           0.66       833
+   macro avg       0.66      0.65      0.65       833
+weighted avg       0.66      0.66      0.65       833
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+class                0.015699             0.115029        Male      
+teacher              0.015650             -0.437602       Female    
+very                 0.015369             -0.811625       Female    
+professor            0.015170             1.887456        Male      
+helpful              0.011868             -1.091974       Female    
+great                0.011157             0.308772        Male      
+not                  0.010831             -0.220213       Female    
+easy                 0.009908             -0.954739       Female    
+best                 0.009259             0.668624        Male      
+student              0.008836             -0.935746       Female    
+love                 0.008511             -1.114161       Female    
+really               0.008308             -0.335150       Female    
+help                 0.008173             -0.823736       Female    
+good                 0.007915             0.736333        Male      
+math                 0.007744             -1.252436       Female    
+nice                 0.007732             -0.954107       Female    
+so                   0.007672             -1.137844       Female    
+awesome              0.007496             -1.163220       Female    
+lecture              0.007426             0.671252        Male      
+test                 0.007333             0.374955        Male      
+
+========================================================
+--- Analysis for df4_humanities_poor ---
+========================================================
+
+--------------------------------------
+--- Original Comments ---
+--------------------------------------
+Random Forest Accuracy: 95.02%
+Random Forest OOB Score: 0.91
+Logistic Regression Accuracy: 92.31%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.94      0.98      0.96       132
+        male       0.98      0.90      0.94        89
+
+    accuracy                           0.95       221
+   macro avg       0.96      0.94      0.95       221
+weighted avg       0.95      0.95      0.95       221
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.90      0.98      0.94       132
+        male       0.97      0.83      0.90        89
+
+    accuracy                           0.92       221
+   macro avg       0.94      0.91      0.92       221
+weighted avg       0.93      0.92      0.92       221
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+he                   0.144731             6.916753        Male      
+she                  0.141139             -6.363069       Female    
+her                  0.080030             -4.491349       Female    
+his                  0.074563             3.895193        Male      
+him                  0.032030             2.165533        Male      
+not                  0.011817             0.235136        Male      
+guy                  0.010073             1.202178        Male      
+class                0.008618             0.220438        Male      
+professor            0.007325             0.487290        Male      
+very                 0.006103             -0.036332       Female    
+worst                0.005934             0.173572        Male      
+teacher              0.005698             -0.442118       Female    
+lecture              0.005345             0.634765        Male      
+grade                0.004870             -0.276644       Female    
+test                 0.004505             0.471270        Male      
+avoid                0.004344             0.503551        Male      
+do                   0.004156             -0.078887       Female    
+nice                 0.004068             -1.004394       Female    
+exam                 0.004019             0.661524        Male      
+horrible             0.003893             -0.524134       Female    
+
+--------------------------------------
+--- Scrubbed Comments ---
+--------------------------------------
+Random Forest Accuracy: 58.82%
+Random Forest OOB Score: 0.62
+Logistic Regression Accuracy: 63.35%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.61      0.89      0.72       132
+        male       0.46      0.15      0.22        89
+
+    accuracy                           0.59       221
+   macro avg       0.54      0.52      0.47       221
+weighted avg       0.55      0.59      0.52       221
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.64      0.87      0.74       132
+        male       0.60      0.28      0.38        89
+
+    accuracy                           0.63       221
+   macro avg       0.62      0.58      0.56       221
+weighted avg       0.62      0.63      0.60       221
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+not                  0.015604             -0.014579       Female    
+class                0.013121             0.404214        Male      
+professor            0.012652             0.664102        Male      
+lecture              0.010584             1.112317        Male      
+exam                 0.010518             1.253248        Male      
+very                 0.009480             -0.068125       Female    
+nice                 0.009460             -2.005273       Female    
+avoid                0.008722             0.361842        Male      
+test                 0.008571             1.104504        Male      
+draw                 0.008273             1.442673        Male      
+do                   0.008121             -0.209933       Female    
+bore                 0.007850             0.888525        Male      
+funny                0.007549             1.081925        Male      
+best                 0.007133             0.498449        Male      
+worst                0.007114             -0.321192       Female    
+teach                0.007067             0.036909        Male      
+teacher              0.006879             -0.605953       Female    
+time                 0.006807             -0.464070       Female    
+chapter              0.006565             1.053626        Male      
+work                 0.006089             -1.286983       Female    
+
+========================================================
+--- Analysis for df5_humanities_average ---
+========================================================
+
+--------------------------------------
+--- Original Comments ---
+--------------------------------------
+Random Forest Accuracy: 90.95%
+Random Forest OOB Score: 0.93
+Logistic Regression Accuracy: 90.74%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.87      0.96      0.92       247
+        male       0.96      0.85      0.90       239
+
+    accuracy                           0.91       486
+   macro avg       0.91      0.91      0.91       486
+weighted avg       0.91      0.91      0.91       486
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.87      0.97      0.91       247
+        male       0.96      0.85      0.90       239
+
+    accuracy                           0.91       486
+   macro avg       0.91      0.91      0.91       486
+weighted avg       0.91      0.91      0.91       486
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+he                   0.175823             8.842921        Male      
+she                  0.113897             -9.145982       Female    
+her                  0.103664             -6.815717       Female    
+his                  0.075699             5.439279        Male      
+him                  0.039658             3.483093        Male      
+guy                  0.020175             2.608812        Male      
+class                0.008571             -0.837111       Female    
+not                  0.007852             -0.470552       Female    
+very                 0.007098             -0.678761       Female    
+professor            0.005441             -0.104067       Female    
+bore                 0.004433             0.560754        Male      
+do                   0.004319             0.291835        Male      
+teach                0.004305             0.572404        Male      
+teacher              0.004207             -0.332766       Female    
+time                 0.004159             0.374516        Male      
+man                  0.004014             0.871485        Male      
+helpful              0.003999             -0.532816       Female    
+grade                0.003967             0.436729        Male      
+read                 0.003747             0.364204        Male      
+course               0.003704             1.170378        Male      
+
+--------------------------------------
+--- Scrubbed Comments ---
+--------------------------------------
+Random Forest Accuracy: 57.61%
+Random Forest OOB Score: 0.60
+Logistic Regression Accuracy: 59.05%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.56      0.82      0.66       247
+        male       0.63      0.33      0.43       239
+
+    accuracy                           0.58       486
+   macro avg       0.60      0.57      0.55       486
+weighted avg       0.59      0.58      0.55       486
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.57      0.81      0.67       247
+        male       0.65      0.36      0.47       239
+
+    accuracy                           0.59       486
+   macro avg       0.61      0.59      0.57       486
+weighted avg       0.61      0.59      0.57       486
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+class                0.018247             -0.360755       Female    
+not                  0.013916             -0.572448       Female    
+very                 0.012296             -0.918726       Female    
+professor            0.009417             0.256690        Male      
+time                 0.009287             0.789417        Male      
+do                   0.009043             0.580021        Male      
+teacher              0.008043             -0.606145       Female    
+teach                0.008026             1.100529        Male      
+bore                 0.007786             1.420696        Male      
+just                 0.007565             1.028920        Male      
+great                0.006824             0.304350        Male      
+knowledge            0.006717             1.499801        Male      
+easy                 0.006716             -0.487989       Female    
+hard                 0.006418             -0.916110       Female    
+like                 0.006405             0.415041        Male      
+test                 0.006370             0.373098        Male      
+good                 0.006266             0.477792        Male      
+student              0.006260             -0.083599       Female    
+read                 0.006172             0.272830        Male      
+grade                0.006106             -0.133071       Female    
+
+========================================================
+--- Analysis for df6_humanities_good ---
+========================================================
+
+--------------------------------------
+--- Original Comments ---
+--------------------------------------
+Random Forest Accuracy: 90.10%
+Random Forest OOB Score: 0.90
+Logistic Regression Accuracy: 90.21%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.90      0.90      0.90       903
+        male       0.90      0.91      0.90       976
+
+    accuracy                           0.90      1879
+   macro avg       0.90      0.90      0.90      1879
+weighted avg       0.90      0.90      0.90      1879
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.90      0.90      0.90       903
+        male       0.91      0.90      0.91       976
+
+    accuracy                           0.90      1879
+   macro avg       0.90      0.90      0.90      1879
+weighted avg       0.90      0.90      0.90      1879
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+she                  0.178394             -14.033330      Female    
+he                   0.170958             13.055673       Male      
+her                  0.134292             -10.847697      Female    
+his                  0.065877             8.328776        Male      
+him                  0.039147             6.338450        Male      
+guy                  0.017727             4.574448        Male      
+class                0.008321             -0.453675       Female    
+professor            0.006497             0.811738        Male      
+great                0.006071             0.236416        Male      
+very                 0.005638             0.102859        Male      
+teacher              0.005478             -0.055354       Female    
+not                  0.004854             0.036552        Male      
+nice                 0.004774             -1.127334       Female    
+man                  0.004409             1.756918        Male      
+easy                 0.004002             -0.133944       Female    
+good                 0.003999             -0.418568       Female    
+best                 0.003989             0.629787        Male      
+helpful              0.003930             -0.349650       Female    
+really               0.003562             -0.077998       Female    
+student              0.003376             0.011600        Male      
+
+--------------------------------------
+--- Scrubbed Comments ---
+--------------------------------------
+Random Forest Accuracy: 57.58%
+Random Forest OOB Score: 0.57
+Logistic Regression Accuracy: 62.21%
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.56      0.55      0.56       903
+        male       0.59      0.60      0.59       976
+
+    accuracy                           0.58      1879
+   macro avg       0.58      0.58      0.58      1879
+weighted avg       0.58      0.58      0.58      1879
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+      female       0.61      0.61      0.61       903
+        male       0.64      0.63      0.63       976
+
+    accuracy                           0.62      1879
+   macro avg       0.62      0.62      0.62      1879
+weighted avg       0.62      0.62      0.62      1879
+
+Top 20 Words:
+Word                 Feature Importance   Coefficient     Direction 
+-------------------- -------------------- --------------- ----------
+class                0.017645             -0.469534       Female    
+very                 0.013456             -0.011520       Female    
+professor            0.012331             0.953450        Male      
+great                0.011449             0.610574        Male      
+not                  0.011448             -0.087258       Female    
+teacher              0.011392             -0.371986       Female    
+easy                 0.009738             -0.208428       Female    
+helpful              0.008572             -0.675922       Female    
+best                 0.008527             0.399252        Male      
+really               0.008339             -0.148530       Female    
+nice                 0.008039             -1.354379       Female    
+good                 0.007954             0.006091        Male      
+student              0.007382             -0.419465       Female    
+love                 0.007373             -1.201072       Female    
+so                   0.007042             -0.160160       Female    
+learn                0.006826             -0.357897       Female    
+work                 0.006787             -0.379491       Female    
+lot                  0.006776             -0.206603       Female    
+take                 0.006650             0.089399        Male      
+just                 0.006632             0.531155        Male      
+
