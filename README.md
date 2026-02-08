@@ -1,4 +1,4 @@
-# 🧑‍🏫 RateMyProfessor - Word Gender in Comment
+<img width="468" height="57" alt="image" src="https://github.com/user-attachments/assets/d897c19c-15de-4e85-b616-57f070370fe0" /># 🧑‍🏫 RateMyProfessor - Word Gender in Comment
 This repository is the final project for STATS 201.
 
 ## 📝 Project information
@@ -24,6 +24,7 @@ This repository is structured into several directiories to support running the c
   - W4_2. Model1: Random Forest & Logistic Regression.
   - W4_3. Model2: LOR - Log-Odds Ratio with a Dirichlet Prior.
   - W5_1 & W5_2. Two models diagnostics and revision.
+  - W5_3_Model revision (extend removal word list)
  
 ### 2. Datasets
 - Location: /Data
@@ -40,7 +41,8 @@ This repository is structured into several directiories to support running the c
 ### 3. Visualizatuion
 - Location: /Visualization
 - This folder contains figures generated in this research.
-  - W4_Z-scores_comparison_scrubbed.png - Heatmap of z-scores comparison 
+  - W4_Z-scores_comparison_scrubbed.png - Heatmap of z-scores comparison
+  - W5_LOR_revised model_NEG+Uni_heatmap & Frequency-weight plot.
 
 ## 📊 Data Preprocessing
 - 1. Gender classification:
@@ -93,6 +95,26 @@ We use the Log-Odds Ratio with a Dirichlet Prior (Monroe et al., 2008) to analyz
 #### Key Findings
 Our model reveals that students often focus on a female professor's personality (e.g., sweet, nice) while emphasizing a male professor's professional status (e.g., professor).
 
+## 🔧 Model diagnostics and revision
+
+### Model 2: Log-Odds Ration (LOR)
+We validated and refined our Log-Odds Ratio (LOR) model using the Monroe et al. (2008) framework.
+#### 1. Model diagnostics.
+- We used Frequency-weight plots to check if the model is misled by high-frequency or rare words.
+- Our plot confirms that rare words were successfully pulled toward the baseline (z=0).
+- For high-frequency terms, most are concentrated in the middle-frequency zone and those high ones were cross-checked via heatmaps, showing consistent gendered directions across all disciplines.
+
+#### 2. Sensitivity checks
+- - Prior comparison: We compared informed Dirichlet Priors using a background prior aganist flat priors.
+  - The results show high robustness, as 13 out of the top 20 words remain identical across all configurations.
+
+#### 3. Model revision: remove discipline specific terms
+Initial results contained discipline nouns that reflected department distribution rather than student perception. We revised the model through a systematic filtering process:
+- Collected all unique department names => broke into individual tokens => manual review (keep general academic terms) => applied the blacklist to the comment_scrubbed column and finalize the comment column.
+
+#### 4. Final model:
+- Our final model implements a NEG_prefix + Unigram approach on the cleaned dataset.
+  
 ## 🖊️ Acknowledgement
 ### Division of Responsibilities
 For this project stage, each group member was responsible for the following components:
@@ -104,6 +126,7 @@ For this project stage, each group member was responsible for the following comp
     - Data cleaning and labeling by gender inferred from text。
     - Revise rating scale and conduct text preprocessing; Split train/test dataset;
     - Conducted the Log-Odds Ratio with a Dirichlet Prior to analyze student comments.
+    - Extended the removal-word list by adding discipline specific terms. Conducted Log odds ratio (LOR) model revision.
 
 - Lexi Zhou:
   - Descriptive dataset analysis.
