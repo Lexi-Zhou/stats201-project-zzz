@@ -21,7 +21,9 @@ This repository is structured into several directiories to support running the c
   - W3_3. Gender_Check_Finalized - Assign all comments with a concrete gender.
   - W3_4. Baseline.ipynb - Train/test split and baseline models with justification.
   - W4_1. Feature Engineering - Extended data preprocessing and experimental grouping structure split.
-  - W4_3. Model2: LOR - Log-Odds Ratio with a Dirichlet Prior
+  - W4_2. Model1: Random Forest & Logistic Regression.
+  - W4_3. Model2: LOR - Log-Odds Ratio with a Dirichlet Prior.
+  - W5_1 & W5_2. Two models diagnostics and revision.
  
 ### 2. Datasets
 - Location: /Data
@@ -32,7 +34,8 @@ This repository is structured into several directiories to support running the c
   - 16_RMP_gender_finalized.csv - With concrete gender for every comment text.
   - 17_RMP_comment_department.csv - Comments with further preprocessed text, departments classified.
   - 18_RMP_humanities/stem_poor/average/good.csv - 6 subgroups for modeling.
-  - 20_LOR_combined_top_20_words_analysis.txt - Results of Log-odds ratio
+  - 19_combined_top_20_words_RFanalysis.txt - Results of Random Forest & Logistic Regression.
+  - 20_LOR_combined_top_20_words_analysis.txt - Results of Log-odds ratio.
 
 ### 3. Visualizatuion
 - Location: /Visualization
@@ -86,6 +89,7 @@ We use the Log-Odds Ratio with a Dirichlet Prior (Monroe et al., 2008) to analyz
 - 5. Z-score Normalization: The final score represents the Confidence of the bias.
   - Positive Z-score: Male-leaning (Red in our heatmaps).
   - Negative Z-score: Female-leaning (Blue in our heatmaps).
+
 #### Key Findings
 Our model reveals that students often focus on a female professor's personality (e.g., sweet, nice) while emphasizing a male professor's professional status (e.g., professor).
 
@@ -105,5 +109,6 @@ For this project stage, each group member was responsible for the following comp
   - Descriptive dataset analysis.
   - Develop baseline models to assess word frequency patterns and preliminary gender differences in student comments.
   - Designed text features and representations, and set up the controlled experimental structure for later model and lexical comparisons.
+  - Adapted the original LOR and RF+LR pipelines, added alternative text-processing configurations, and built the diagnostics used for error analysis and robustness checking.
 
  
