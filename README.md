@@ -1,4 +1,4 @@
-<img width="468" height="57" alt="image" src="https://github.com/user-attachments/assets/d897c19c-15de-4e85-b616-57f070370fe0" /># 🧑‍🏫 RateMyProfessor - Word Gender in Comment
+# 🧑‍🏫 RateMyProfessor - Word Gender in Comment
 This repository is the final project for STATS 201.
 
 ## 📝 Project information
