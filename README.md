@@ -96,6 +96,20 @@ We use the Log-Odds Ratio with a Dirichlet Prior (Monroe et al., 2008) to analyz
 Our model reveals that students often focus on a female professor's personality (e.g., sweet, nice) while emphasizing a male professor's professional status (e.g., professor).
 
 ## 🔧 Model diagnostics and revision
+### Model 1: Random Forest + Logistic Regression (RF&LR)
+We checked the confusion matrix, ROC-AUC, and tried to find the best parameter for RF and LR.
+
+#### 1. Model diagnostics and sensitivity checks
+- Our heatmaps of RF&LR in different conditions showed that function words are still prevelant in the final result, and NEG_prefix + Unigram token condition is most interpretable among all conditions.
+- Meanhwile, the accuracy, f1 score, ROC-AUC of the RF&LR model in different token conditions are all around 60%, indicating space for improvement.
+
+#### 2. Model revision: remove english stopwords and hyperparameter tuning by GridSearchCV
+- Learning from the metrics, we decided to remove 'english' stopwords and use hyperparameter to improve the performance of RF&LR model.
+- The hyperparameter tuning was set by GridSearchCV, with 70% focus on balancing RF&LR, so that two models can complement each other, and the other 30% focus on performance.
+- However, except for f1 score, both accuracy and ROC-AUC rate decreases for the updated strategy compared to the previous one, and the confusion matrix didn't report significantly more accurate gender predictions. Thus, we chose not to use the hyperparameter strategy, and only remove 'english' stopwords. Also, we chose NEG_prefix + Unigram based on diagnosis.
+
+#### 4. Final model:
+- Our final model implements a NEG_prefix + Unigram approach on the 'english' stopwords removed dataset.
 
 ### Model 2: Log-Odds Ration (LOR)
 We validated and refined our Log-Odds Ratio (LOR) model using the Monroe et al. (2008) framework.
