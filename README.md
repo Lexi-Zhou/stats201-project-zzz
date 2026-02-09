@@ -135,6 +135,7 @@ For this project stage, each group member was responsible for the following comp
 - Raodan Zhang:
     - Background research
     - Dataset external gender validate
+    - Random Forest and Losgistic Regression model set, diagnosis, and revision.
       
 - Hanyang Zhou:
     - Data cleaning and labeling by gender inferred from text。
