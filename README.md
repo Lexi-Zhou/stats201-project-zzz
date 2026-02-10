@@ -101,7 +101,7 @@ We checked the confusion matrix, ROC-AUC, and tried to find the best parameter f
 
 #### 1. Model diagnostics and sensitivity checks
 - Our heatmaps of RF&LR in different conditions showed that function words are still prevelant in the final result, and NEG_prefix + Unigram token condition is most interpretable among all conditions.
-- Meanhwile, the accuracy, f1 score, ROC-AUC of the RF&LR model in different token conditions are all around 60%, indicating space for improvement.
+- Meanhwile, the accuracy and ROC-AUC of the RF&LR model in different token conditions are all around 60%, indicating space for improvement.
 
 #### 2. Model revision: remove english stopwords and hyperparameter tuning by GridSearchCV
 - Learning from the metrics, we decided to remove 'english' stopwords and use hyperparameter to improve the performance of RF&LR model.
