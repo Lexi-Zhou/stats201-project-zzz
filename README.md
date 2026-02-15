@@ -133,7 +133,10 @@ Initial results contained discipline nouns that reflected department distributio
 
 
 ## 📋 Interpretation of results
-### 1. LOR
+### 1. Random Forest + Logistic Regression
+Across all subsets with unigram processing, “teacher” indicates female professors, while “professor” predicts male professors. Obviously, teacher is the title inferior to professor. The reference difference is also prominent in bigram processing, where female professors are also frequently referred to as “person” (e.g., nice person) besides “teacher”. Although some exemptions exist, such as in Poor-rated humanities, female professors were also referred as “worst professor”, the general title reference difference is alert to us and imply an underestimation of female professor’s authority. Another big difference is the expectations of personality traits for female and male professors. While affective words are generally more predictable to female professors, male professors are uniquely expected to be funny, especially in humanities.
+
+### 2. Log odds ratio
 By combining the unigram and bigram analyses, our research suggests two consistent language patterns of professor evaluation by gender. 
 
 First, the standards for female professors are highly associated with the personal nature of caring and nurturing. For the positive comments, both unigram and bigram analysis show similar patterns related to personality, including nice, sweet, helpful, very sweet, super nice, and a nice person. When the students give negative ratings on female professors, they tend to use words such as unorganized, mad, or very strict. These comments directly contrast with the positive comments about female professors’ caring personalities. This further demonstrates that students’ expectation of female professors is related to their nurturing personality.
@@ -148,6 +151,7 @@ For this project stage, each group member was responsible for the following comp
     - Background research
     - Dataset external gender validate
     - Random Forest and Losgistic Regression model set, diagnosis, and revision.
+    - Interpreted and analyzed the language patterns across discipline/rating subsets of the Random Forest + Logistic Regression model.
       
 - Hanyang Zhou:
     - Data cleaning and labeling by gender inferred from text。
