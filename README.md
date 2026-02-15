@@ -128,6 +128,16 @@ Initial results contained discipline nouns that reflected department distributio
 
 #### 4. Final model:
 - Our final model implements a NEG_prefix + Unigram approach on the cleaned dataset.
+
+
+## 📋 Interpretation of results
+### 1. LOR
+By combining the unigram and bigram analyses, our research suggests two consistent language patterns of professor evaluation by gender. 
+
+First, the standards for female professors are highly associated with the personal nature of caring and nurturing. For the positive comments, both unigram and bigram analysis show similar patterns related to personality, including nice, sweet, helpful, very sweet, super nice, and a nice person. When the students give negative ratings on female professors, they tend to use words such as unorganized, mad, or very strict. These comments directly contrast with the positive comments about female professors’ caring personalities. This further demonstrates that students’ expectation of female professors is related to their nurturing personality.
+
+Second, the standards for male professors are related to 1) professionality (e.g., professor and smart) and 2) entertaining characteristics. Male professors are commented on by phrases like very funny, sense humor, and learn a lot. This indicates that male professors are associated with expectations on their entertaining personality and professional performance. 
+
   
 ## 🖊️ Acknowledgement
 ### Division of Responsibilities
@@ -142,6 +152,7 @@ For this project stage, each group member was responsible for the following comp
     - Revise rating scale and conduct text preprocessing; Split train/test dataset;
     - Conducted the Log-Odds Ratio with a Dirichlet Prior to analyze student comments.
     - Extended the removal-word list by adding discipline specific terms. Conducted Log odds ratio (LOR) model revision.
+    - Interpreted and analyzed the language patterns across discipline/rating subsets of the LOR model.
 
 - Lexi Zhou:
   - Descriptive dataset analysis.
