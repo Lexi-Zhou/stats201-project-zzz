@@ -24,7 +24,8 @@ This repository is structured into several directiories to support running the c
   - W4_2. Model1: Random Forest & Logistic Regression.
   - W4_3. Model2: LOR - Log-Odds Ratio with a Dirichlet Prior.
   - W5_1 & W5_2. Two models diagnostics and revision.
-  - W5_3_Model revision (extend removal word list)
+  - W5_3. Model revision (extend removal word list).
+  - W6_1 & W6_2. Finalized version of two models with result visualizations.
  
 ### 2. Datasets
 - Location: /Data
@@ -50,7 +51,7 @@ This repository is structured into several directiories to support running the c
   - 1.2 Aggregated comment-level gender labels to the professor level and manually reviewed inconsistent or conflicting cases.
   - 1.3 Applied existing name–gender reference datasets to label remaining unknown entries when pronoun-based signals were absent.
 - 2. Comment text preprocessing: Performed preprocessing at the comment level to generate the final modeling input (comments_final), including:
-  - basic text cleaning (escape characters and whitespace), lowercasing, punctuation removal, contraction and negation expansion, tokenization, lemmatization (with fallback), negation marking, n-gram construction (1–3 grams), and stopword removal while retaining negation terms.
+  - basic text cleaning (escape characters and whitespace), lowercasing, punctuation removal, contraction and negation expansion, lemmatization, negation prefix marking, n-gram construction, and stopword removal while retaining negation terms.
     
 ## 📦 Baseline Modeling
 - 1. Train/test split: Split the dataset into training and test sets using an 80/20 random split with a fixed random state to ensure reproducibility.
@@ -159,5 +160,6 @@ For this project stage, each group member was responsible for the following comp
   - Develop baseline models to assess word frequency patterns and preliminary gender differences in student comments.
   - Designed text features and representations, and set up the controlled experimental structure for later model and lexical comparisons.
   - Adapted the original LOR and RF+LR pipelines, added alternative text-processing configurations, and built the diagnostics used for error analysis and robustness checking.
+  - Finalized the code; Generated result visualizations; Proofread the report.
 
  
