@@ -42,8 +42,9 @@ This repository is structured into several directiories to support running the c
 ### 3. Visualizatuion
 - Location: /Visualization
 - This folder contains figures generated in this research.
-  - W4_Z-scores_comparison_scrubbed.png - Heatmap of z-scores comparison
-  - W5_LOR_revised model_NEG+Uni_heatmap & Frequency-weight plot.
+  - W4_Z-scores_comparison_scrubbed.png - Heatmap of z-scores comparison.
+  - W5_LOR_revised model_NEG+Uni_heatmap & Frequency-weight plot
+  - W6_model_word cloud_unigram & bigram
 
 ## 📊 Data Preprocessing
 - 1. Gender classification:
