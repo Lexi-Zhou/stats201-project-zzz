@@ -32,6 +32,9 @@ This repository is structured into several directiories to support running the c
 - `W4_3_Model2_LOR.ipynb` Model2: Log-Odds Ratio with a Dirichlet Prior (LOR).
 - `W5_1_RF_LR_diagnostics.ipynb` `W5_2_LOR_diagnostics.ipynb` `W5_3_Model_revision_(extend_removal_word_list).ipynb` Two models diagnostics and revision.
 - `W6_1_RF_LR_finalized.ipynb` `W6_2_LOR_finalized.ipynb` Finalized version of two models with result visualizations.
+
+#### How to run the code
+The original notebooks were developed in Google Colab and load datasets from a shared Google Drive. To run the code locally or after cloning this repository, please download the required CSV files from the `/Data1` folder and update the file paths accordingly. Specifically, remove or comment out the Google Drive mounting code, and replace the original `FILE_PATH` or `base_path` with the local path to the downloaded data files. No other code changes are required.
  
 ### 2. Datasets
 - Location: /Data1
@@ -44,10 +47,12 @@ This repository is structured into several directiories to support running the c
 ### 3. Visualizatuion
 - Location: /Visualization
 - This folder contains figures generated in this research.
-  - W4_Z-scores_comparison_scrubbed.png - Heatmap of z-scores comparison.
-  - W5_LOR_revised model_NEG+Uni_heatmap & Frequency-weight plot.
-  - W6_(model)_word cloud_unigram & bigram.
-  - W6_(model)_diverging_bar_charts_unigram & bigram.
+  - `W2_2.Gender label_distribution.png` Distribution of professor gender labels in the dataset.
+  - `W3_4. Baseline_top_gender_words.png` Top gender-leaning words identified by the baseline.
+  - `W4_Z-scores_comparison_scrubbed.png` Heatmap of z-scores comparison.
+  - `W5_LOR_revised model_NEG+Uni_heatmap & Frequency-weight plot.png` LOR diagnostics.
+  - `W6_(model)_word cloud_unigram & bigram.png` Word cloud visualization.
+  - `W6_(model)_diverging_bar_charts_unigram & bigram.png` Diverging bar charts visualization.
 
 ## 📊 Data Preprocessing
 - 1. Gender classification:
