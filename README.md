@@ -1,4 +1,4 @@
-# 🧑‍🏫 RateMyProfessor - Word Gender in Comment
+# 🧑‍🏫 Gendered Language Patterns in Professor Comments
 This repository is the final project for STATS 201.
 
 ## 📝 Project information
@@ -14,37 +14,40 @@ We plan to investigate the dataset gathered from the largest online rating websi
 This repository is structured into several directiories to support running the code, accessing datasets, and reviewing documentation. The following section explains how to navigate the repository.
 ### 1. Code for ML Tasks
 - Location: /Code
-- This folder contains Jupyter Notebooks for data preparing.
-  - W2_1. Data Preparation.ipynb - Merge datasets and cleans the dataset.
-  - W2_2. Gender label.ipynb - Label gender of professors based on student comments.
-  - W3_1. Revise rating groups - Revise rating scales to the official RMP scales (Good: 3.5-5, Average: 2.5-3.4, Poor: 1-2.4).
-  - W3_3. Gender_Check_Finalized - Assign all comments with a concrete gender.
-  - W3_4. Baseline.ipynb - Train/test split and baseline models with justification.
-  - W4_1. Feature Engineering - Extended data preprocessing and experimental grouping structure split.
-  - W4_2. Model1: Random Forest & Logistic Regression.
-  - W4_3. Model2: LOR - Log-Odds Ratio with a Dirichlet Prior.
-  - W5_1 & W5_2. Two models diagnostics and revision.
-  - W5_3. Model revision (extend removal word list).
-  - W6_1 & W6_2. Finalized version of two models with result visualizations.
+- This folder contains Jupyter Notebooks for data processing and modeling.
+
+#### Data Processing
+- `W2_1_Data_Preparation.ipynb` Merge and clean datasets.
+- `W3_1_Revise_rating_groups.ipynb` Recode ratings into official RMP scales.
+- `W3_2_Data_preprocessing.ipynb` Standard text preprocessing.
+- `W4_1_feature_engineering.ipynb` Extended text preprocessing and construction of experimental groupings.
+  
+#### Gender Labeling
+- `W2_2_Gender_label.ipynb` Assign professor gender labels based on student comments.
+- `W3_3_Gender_Check_Finalized.ipynb` Finalize gender assignment for all comments.
+
+#### Modeling
+- `W3_4_Baseline.ipynb` Baseline models.
+- `W4_2_Model1_RandomForest_&_LogisticRegression.ipynb` Model1: Random Forest & Logistic Regression (RF&LR).
+- `W4_3_Model2_LOR.ipynb` Model2: Log-Odds Ratio with a Dirichlet Prior (LOR).
+- `W5_1_RF_LR_diagnostics.ipynb` `W5_2_LOR_diagnostics.ipynb` `W5_3_Model_revision_(extend_removal_word_list).ipynb` Two models diagnostics and revision.
+- `W6_1_RF_LR_finalized.ipynb` `W6_2_LOR_finalized.ipynb` Finalized version of two models with result visualizations.
  
 ### 2. Datasets
-- Location: /Data
+- Location: /Data1
 - This folder contains the datasets applied in this research. Key datasets include:
-  - RMP_merged.csv - The raw dataset of all RateMyProfessor entries
-  - 09_RMP_prof_gender_manual_updated.csv - The prepared dataset with professor-level labeled entries after manual checking.
-  - 11_RMP_prof_gender_preprocessed.csv - Comment columns with text preprocessed.
-  - 16_RMP_gender_finalized.csv - With concrete gender for every comment text.
-  - 17_RMP_comment_department.csv - Comments with further preprocessed text, departments classified.
-  - 18_RMP_humanities/stem_poor/average/good.csv - 6 subgroups for modeling.
-  - 19_combined_top_20_words_RFanalysis.txt - Results of Random Forest & Logistic Regression.
-  - 20_LOR_combined_top_20_words_analysis.txt - Results of Log-odds ratio.
+  - `RMP_merged.csv` The raw dataset of all RateMyProfessor entries.
+  - `16_RMP_gender_finalized.csv` With concrete gender for every comment text.
+  - `17_RMP_comment_department.csv` Comments with preprocessed text, departments classified.
+  - `18_RMP_humanities/stem_poor/average/good.csv` 6 subgroups for modeling.
 
 ### 3. Visualizatuion
 - Location: /Visualization
 - This folder contains figures generated in this research.
   - W4_Z-scores_comparison_scrubbed.png - Heatmap of z-scores comparison.
-  - W5_LOR_revised model_NEG+Uni_heatmap & Frequency-weight plot
-  - W6_model_word cloud_unigram & bigram
+  - W5_LOR_revised model_NEG+Uni_heatmap & Frequency-weight plot.
+  - W6_(model)_word cloud_unigram & bigram.
+  - W6_(model)_diverging_bar_charts_unigram & bigram.
 
 ## 📊 Data Preprocessing
 - 1. Gender classification:
