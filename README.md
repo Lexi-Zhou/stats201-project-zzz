@@ -4,6 +4,7 @@ This repository is the final project for STATS 201.
 ## 📝 Project information
 - Team members: Hanyang Zhou, Raodan Zhang, Lexi Zhou
 - Instructor: Markus Neumann
+- GitHub Pages report: https://lexi-zhou.github.io/stats201-project-zzz/
 
 ## 🔍 Research question
 ***How does gender influence students’ comment on college professors of similar teaching level in the same discipline?***
