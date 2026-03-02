@@ -33,7 +33,7 @@ This repository is structured into several directiories to support running the c
 - `W5_1_RF_LR_diagnostics.ipynb` `W5_2_LOR_diagnostics.ipynb` `W5_3_Model_revision_(extend_removal_word_list).ipynb` Two models diagnostics and revision.
 - `W6_1_RF_LR_finalized.ipynb` `W6_2_LOR_finalized.ipynb` Finalized version of two models with result visualizations.
 
-#### How to run the code
+#### ▶️ How to run the code
 The original notebooks were developed in Google Colab and load datasets from a shared Google Drive. To run the code locally or after cloning this repository, please download the required CSV files from the `/Data1` folder and update the file paths accordingly. Specifically, remove or comment out the Google Drive mounting code, and replace the original `FILE_PATH` or `base_path` with the local path to the downloaded data files. No other code changes are required.
  
 ### 2. Datasets
